@@ -29,3 +29,4 @@ ReadMe.txt
 influxdb_java.iml
 target/classes/log4j2.properties
 target/generated-sources/
+pom.xml
