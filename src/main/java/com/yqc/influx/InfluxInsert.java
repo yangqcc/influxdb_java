@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit;
 public class InfluxInsert {
     public static void main(String[] args) {
         InfluxDB influxDB = InfluxDBFactory.connect("http://localhost:8086", "root", "123");
-        String dbName = "aTimeSeries";
+        String dbName = "mydb";
         influxDB.setDatabase(dbName);
         influxDB.enableBatch(2000, 100, TimeUnit.MILLISECONDS);
         BatchPoints batchPoints = BatchPoints
